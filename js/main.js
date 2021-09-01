@@ -1,0 +1,1 @@
+console.log('assignment-6 success')
