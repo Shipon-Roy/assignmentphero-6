@@ -11,6 +11,33 @@
 <body>
     <section>
         <h1 class="text-info text-center">Search Your Favorite Book</h1>
+
+        <!-- search section -->
+        <div class="input-group mb-3 w-50 mx-auto">
+            <input id="search-input" type="text" class="form-control" placeholder="Enter Your Favorite Book Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="loadBook()" class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
+        </div>
+
+        <!-- error and spinner  -->
+        <h6 id="error-massage" class="text-danger text-center">Not Found your Name ???</h6>
+        <div class="d-flex justify-content-center">
+            <div id="spinner" class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <!-- total book number -->
+        <h3 id="total-book" class="mx-auto text-white bg-info w-50 p-5 rounded"></h3>
+
+        <!-- detail area  -->
+        <!-- <div id="book-detail">
+
+        </div> -->
+
+        <!-- display card section  -->
+        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+           
+        </div>
     </section>
 
     <!-- bootstrap script link  -->
