@@ -70,31 +70,3 @@ const displayBook = books => {
     });
     }
 }
-
-/* book detail */
-/* const bookDetail = bookId => {
-    const url = `HTTPS://covers.openlibrary.org/b/id/${bookId}-M.jpg`;
-    fetch(url)
-    .then(res => res.json())
-    .then(data => console.log(data))
-}
-const displayBookdetail = details => {
-    console.log(details)
-    const detailDiv = document.getElementById('book-detail');
-    details.forEach(detail => {
-        console.log(detail)
-        const div = document.createElement('div');
-        div.innerHTML = `
-        <div class="card">
-        <img onclick="bookDetail()" src="HTTPS://covers.openlibrary.org/b/id/${detail.cover_i}-M.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Title: ${detail.title}</h5>
-            <h5 class="card-title">Publisher: ${detail.publisher}</h5>
-            <h5 class="card-title">Author: ${detail.author_name}</h5>
-            <h5 class="card-title">First-Publish-Date: ${detail.first_publish_year}</h5>
-        </div>
-        </div>
-        `;
-        detailDiv.appendChild(div);
-    });
-} */
